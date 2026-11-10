@@ -1,0 +1,250 @@
+:root {
+    --school-navy: #062B63;
+    --school-blue: #0D6EFD;
+
+    --school-background: #F8FAFC;
+
+    --school-success: #16A34A;
+    --school-warning: #F59E0B;
+    --school-danger: #DC2626;
+
+    --school-purple: #7C3AED;
+    --school-teal: #0891B2;
+
+    --school-text: #111827;
+    --school-muted: #6B7280;
+    --school-border: #E5E7EB;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Global
+|--------------------------------------------------------------------------
+*/
+
+body {
+    background-color: var(--school-background);
+    color: var(--school-text);
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Sidebar
+|--------------------------------------------------------------------------
+*/
+
+.school-sidebar {
+    background-color: var(--school-navy);
+}
+
+.school-sidebar .offcanvas-body,
+.school-sidebar .offcanvas-header {
+    background-color: var(--school-navy);
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Sidebar Branding
+|--------------------------------------------------------------------------
+*/
+
+.sidebar-brand {
+    color: #ffffff !important;
+}
+
+.sidebar-brand i {
+    color: #ffffff !important;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Sidebar Navigation
+|--------------------------------------------------------------------------
+*/
+
+.sidebar-nav .nav-item {
+    margin-bottom: 5px;
+}
+
+.sidebar-nav .nav-link {
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 12px;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.sidebar-nav .nav-link.active {
+    background-color: var(--school-blue);
+    color: #ffffff;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Primary Button
+|--------------------------------------------------------------------------
+*/
+
+.school-primary {
+    background-color: var(--school-blue);
+    color: #ffffff;
+}
+
+.school-primary:hover {
+    background-color: #0b5ed7;
+    color: #ffffff;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Navbar
+|--------------------------------------------------------------------------
+*/
+
+.school-navbar {
+    min-height: 64px;
+}
+
+.school-navbar .navbar-brand {
+    color: var(--school-navy);
+    font-weight: 700;
+}
+
+.school-icon-btn {
+    border: none;
+}
+
+.school-icon-btn:hover {
+    background-color: var(--school-background);
+    color: var(--school-blue);
+}
+
+.school-user-btn {
+    border: 1px solid var(--school-border);
+}
+
+.school-user-btn:hover {
+    background-color: var(--school-background);
+    border-color: var(--school-blue);
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Dashboard Cards
+|--------------------------------------------------------------------------
+*/
+
+.dashboard-card {
+    border-left: 4px solid transparent !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+}
+
+.card-blue {
+    border-left-color: var(--school-blue) !important;
+}
+
+.card-blue i {
+    color: var(--school-blue);
+}
+
+.card-purple {
+    border-left-color: var(--school-purple) !important;
+}
+
+.card-purple i {
+    color: var(--school-purple);
+}
+
+.card-green {
+    border-left-color: var(--school-success) !important;
+}
+
+.card-green i {
+    color: var(--school-success);
+}
+
+.card-red {
+    border-left-color: var(--school-danger) !important;
+}
+
+.card-red i {
+    color: var(--school-danger);
+}
+
+
+body {
+    border-top: 10px solid red !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Authentication Pages
+|--------------------------------------------------------------------------
+*/
+
+.auth-page {
+    background-color: var(--school-background);
+}
+
+.auth-logo {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--school-navy);
+    color: #ffffff;
+
+    border-radius: 12px;
+
+    font-size: 30px;
+}
+
+.auth-brand {
+    color: var(--school-navy);
+}
+
+.auth-card {
+    border-radius: 12px;
+}
+
+.school-link {
+    color: var(--school-blue);
+}
+
+.school-link:hover {
+    color: var(--school-navy);
+}
+
+body {
+    border-top: none !important;
+}
+
+.student-detail {
+    min-height: 55px;
+}
+
+.student-detail small {
+    font-size: 0.85rem;
+}
+
+.student-detail span {
+    font-size: 0.95rem;
+}
