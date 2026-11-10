@@ -5,7 +5,8 @@ services:
     name: student-management-system
     runtime: docker
     plan: free
-    dockerfilePath: ./Dockerfile
+    dockerfilePath:  ./app/Dockerfile
+    dockerContext: ./app
 
     envVars:
       - key: APP_NAME
@@ -15,13 +16,13 @@ services:
         value: production
 
       - key: APP_DEBUG
-        value: false
+        value: "false"
 
       - key: APP_KEY
         generateValue: true
 
       - key: APP_URL
-        value: https://student-management-system2026.onrender.com
+        value: "https://student-management-system2026-v3.onrender.com"
 
       - key: DB_CONNECTION
         value: pgsql
